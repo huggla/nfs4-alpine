@@ -1,6 +1,7 @@
 #!/bin/sh -eu
 
-chpst -u nfsuser -b argv0 /bin/sh -c '/usr/sbin/exportfs -vio $EXPORT_SETTINGS $EXPORT_TO:/nfs-share'
+mount -t nfsd nfsd /proc/fs/nfsd
+chpst -u nfsuser /bin/sh -c "/usr/sbin/exportfs -vifo $EXPORT_SETTINGS $EXPORT_TO:/nfs-share"
 
 /sbin/rpcbind -is
 /usr/sbin/rpc.nfsd -d --no-nfs-version 2 --no-nfs-version 3 8 |:
