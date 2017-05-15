@@ -1,5 +1,5 @@
 # nfs4-alpine
-Docker image with nfs4, based on Alpine.
+Docker image with NFS4, based on Alpine.
 
 This container will use the volume mounted at /nfs-share as the directory that will be shared over NFS. Export settings can be set with the EXPORT_SETTINGS environment variable.
 
