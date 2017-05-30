@@ -17,7 +17,7 @@ Default value is:
 
 `/nfs-share *(rw,fsid=0,sync,no_subtree_check,no_auth_nlm,insecure,no_root_squash,crossmnt,no_acl)`
 
-**This default configure is no security implemented, so use it only in a secure environment.**
+> **This default configure is no security implemented, so use it only in a secure environment.**
 
 ## Run it
 

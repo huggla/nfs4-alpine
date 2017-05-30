@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.6
 
 COPY ./bin/start-nfs /start-nfs
 
