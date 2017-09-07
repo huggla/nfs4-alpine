@@ -29,6 +29,7 @@ appArmor) might prevent NFS from starting. To overcome this you can run the cont
 mode or add extra parameters to the run command. On Ubuntu add --security-opt apparmor:unconfined. 
 
 This is needed in order to allow `exportfs` and `nfsd` to run in container.
+
 An example using privileged mode:
 
 ```
@@ -65,4 +66,3 @@ And change below `127.0.0.1` and `/mnt/nfs` to the nfs-server IP and mount desti
 ```
 sudo mount -v -t nfs -o vers=4,port=2049 127.0.0.1:/ /mnt/nfs
 ```
-0ba1f03f3e253b7e2a4d67d89b8ecef40a1c0495
